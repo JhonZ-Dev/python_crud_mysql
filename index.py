@@ -36,3 +36,12 @@ def actualizar_usuario(id_usuario, nuevo_nombre):
     cursor.execute(consulta, valores)
     conexion.commit()
     print("Usuario actualizado con éxito")
+    
+    
+# Operación DELETE (Eliminar)
+def eliminar_usuario(id_usuario):
+    consulta = "DELETE FROM usuarios WHERE id = %s"
+    valores = (id_usuario,)
+    cursor.execute(consulta, valores)
+    conexion.commit()
+    print("Usuario eliminado con éxito")
