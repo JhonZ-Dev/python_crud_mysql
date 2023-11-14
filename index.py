@@ -27,3 +27,12 @@ def leer_usuarios():
     usuarios = cursor.fetchall()
     for usuario in usuarios:
         print(usuario)
+
+
+# Operación UPDATE (Actualizar)
+def actualizar_usuario(id_usuario, nuevo_nombre):
+    consulta = "UPDATE usuarios SET nombre = %s WHERE id = %s"
+    valores = (nuevo_nombre, id_usuario)
+    cursor.execute(consulta, valores)
+    conexion.commit()
+    print("Usuario actualizado con éxito")
