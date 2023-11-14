@@ -50,3 +50,4 @@ def eliminar_usuario(id_usuario):
 # Ejemplos de uso
 crear_usuario("Juan", 25)
 crear_usuario("Ana", 30)    
+leer_usuarios()
