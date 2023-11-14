@@ -55,3 +55,6 @@ actualizar_usuario(1, "Juan Pérez")
 leer_usuarios()
 eliminar_usuario(2)
 leer_usuarios()
+# Cerrar la conexión
+cursor.close()
+conexion.close()
