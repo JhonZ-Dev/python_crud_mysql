@@ -51,3 +51,4 @@ def eliminar_usuario(id_usuario):
 crear_usuario("Juan", 25)
 crear_usuario("Ana", 30)    
 leer_usuarios()
+actualizar_usuario(1, "Juan Pérez")
