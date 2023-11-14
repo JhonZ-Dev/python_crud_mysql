@@ -7,3 +7,6 @@ conexion = mysql.connector.connect(
     password="tu_contraseña",
     database="tu_base_de_datos"
 )
+
+# Crear un cursor para ejecutar consultas SQL
+cursor = conexion.cursor()
