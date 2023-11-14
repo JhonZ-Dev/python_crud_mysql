@@ -18,3 +18,12 @@ def crear_usuario(nombre, edad):
     cursor.execute(consulta, valores)
     conexion.commit()
     print("Usuario creado con éxito")
+
+
+# Operación READ (Leer)
+def leer_usuarios():
+    consulta = "SELECT * FROM usuarios"
+    cursor.execute(consulta)
+    usuarios = cursor.fetchall()
+    for usuario in usuarios:
+        print(usuario)
