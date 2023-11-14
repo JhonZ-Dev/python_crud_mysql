@@ -10,3 +10,11 @@ conexion = mysql.connector.connect(
 
 # Crear un cursor para ejecutar consultas SQL
 cursor = conexion.cursor()
+
+# Operación CREATE (Crear)
+def crear_usuario(nombre, edad):
+    consulta = "INSERT INTO usuarios (nombre, edad) VALUES (%s, %s)"
+    valores = (nombre, edad)
+    cursor.execute(consulta, valores)
+    conexion.commit()
+    print("Usuario creado con éxito")
