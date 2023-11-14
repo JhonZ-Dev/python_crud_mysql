@@ -45,3 +45,8 @@ def eliminar_usuario(id_usuario):
     cursor.execute(consulta, valores)
     conexion.commit()
     print("Usuario eliminado con éxito")
+    
+    
+# Ejemplos de uso
+crear_usuario("Juan", 25)
+crear_usuario("Ana", 30)    
